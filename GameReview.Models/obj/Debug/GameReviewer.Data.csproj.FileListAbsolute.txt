@@ -14,3 +14,6 @@ C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReviewer.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReview.Models.dll
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReview.Models.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReview.Models.Migrations.InitialCreate.resources
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReviewer.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Models\obj\Debug\GameReview.Models.Migrations.InitialMigration.resources
