@@ -3,7 +3,7 @@ namespace GameReview.Models.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class InitialMigration : DbMigration
     {
         public override void Up()
         {
@@ -23,6 +23,10 @@ namespace GameReview.Models.Migrations
                         GameId = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false),
                         CategoryId = c.Int(nullable: false),
+                        Developer = c.String(nullable: false),
+                        ReleaseYear = c.Int(nullable: false),
+                        CreatedUtc = c.DateTimeOffset(nullable: false, precision: 7),
+                        ModifiedUtc = c.DateTimeOffset(precision: 7),
                     })
                 .PrimaryKey(t => t.GameId)
                 .ForeignKey("dbo.Category", t => t.CategoryId, cascadeDelete: true)

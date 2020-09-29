@@ -10,7 +10,6 @@ namespace GameReview.Models.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "GameReviewer.WebMVC.Models.ApplicationDbContext";
         }
 
         protected override void Seed(GameReviewer.WebMVC.Models.ApplicationDbContext context)

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameReview.Models
+namespace GameReview.Data
 {
     public class UserGameReview
     {
