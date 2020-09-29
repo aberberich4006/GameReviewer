@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Debug\GameReview.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Debug\GameReview.Data.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Debug\GameReviewer.Models.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Debug\GameReviewer.Models.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Debug\GameReview.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Debug\GameReview.Data.pdb
