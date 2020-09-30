@@ -113,3 +113,4 @@ C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReviewer.WebMVC\bi
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReviewer.WebMVC\obj\Debug\GameReviewer.WebMVC.csproj.CopyComplete
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReviewer.WebMVC\obj\Debug\GameReviewer.WebMVC.dll
 C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReviewer.WebMVC\obj\Debug\GameReviewer.WebMVC.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReviewer.WebMVC\bin\GameReview.Services.dll.config

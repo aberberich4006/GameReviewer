@@ -13,6 +13,6 @@ namespace GameReview.Data
         public int CategoryId { get; set; }
 
         [Required]
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
     }
 }

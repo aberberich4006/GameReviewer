@@ -3,7 +3,7 @@ namespace GameReview.Models.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialMigration : DbMigration
+    public partial class initialmigration : DbMigration
     {
         public override void Up()
         {
@@ -12,7 +12,7 @@ namespace GameReview.Models.Migrations
                 c => new
                     {
                         CategoryId = c.Int(nullable: false, identity: true),
-                        CategoryName = c.String(nullable: false),
+                        Name = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.CategoryId);
             
