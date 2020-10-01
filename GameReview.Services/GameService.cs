@@ -23,8 +23,9 @@ namespace GameReview.Services
             var entity =
                 new Game()
                 {
-                    
+                    OwnerId = _userId,
                     Name = model.Name,
+                    CategoryId = model.CategoryId,
                     Developer = model.Developer,
                     ReleaseYear = model.ReleaseYear,
                     CreatedUtc = DateTimeOffset.Now
@@ -44,6 +45,7 @@ namespace GameReview.Services
                 var query =
                     ctx
                         .Games
+                        .Where(e => e.OwnerId == _userId)
                         .Select(
                             e =>
                                 new GameListItem
@@ -55,6 +57,62 @@ namespace GameReview.Services
                         );
 
                 return query.ToArray();
+            }
+        }
+
+        public GameDetail GetGameById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Games
+                        .Single(e => e.GameId == id && e.OwnerId == _userId);
+                return
+                    new GameDetail
+                    {
+                        GameId = entity.GameId,
+                        Name = entity.Name,
+                        CategoryId = entity.CategoryId,
+                        CategoryName = entity.Category.Name,
+                        Developer = entity.Developer,
+                        CreatedUtc = entity.CreatedUtc
+                    };
+            }
+        }
+
+        public bool UpdateGame(GameEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Games
+                        .Single(e => e.GameId == model.GameId && e.OwnerId == _userId);
+
+                entity.Name = model.Name;
+                entity.CategoryId = model.CategoryId;
+                entity.Category = model.Category;
+                entity.Developer = model.Developer;
+                entity.ReleaseYear = model.ReleaseYear;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteGame(int gameId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Games
+                        .Single(e => e.GameId == gameId && e.OwnerId == _userId);
+
+                ctx.Games.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
             }
         }
     }

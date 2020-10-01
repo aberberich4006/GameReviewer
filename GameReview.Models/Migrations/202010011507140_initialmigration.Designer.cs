@@ -13,7 +13,7 @@ namespace GameReview.Models.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202009300343484_initialmigration"; }
+            get { return "202010011507140_initialmigration"; }
         }
         
         string IMigrationMetadata.Source

@@ -13,6 +13,7 @@ namespace GameReview.Models.Migrations
                     {
                         CategoryId = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false),
+                        OwnerId = c.Guid(nullable: false),
                     })
                 .PrimaryKey(t => t.CategoryId);
             
@@ -27,6 +28,7 @@ namespace GameReview.Models.Migrations
                         ReleaseYear = c.Int(nullable: false),
                         CreatedUtc = c.DateTimeOffset(nullable: false, precision: 7),
                         ModifiedUtc = c.DateTimeOffset(precision: 7),
+                        OwnerId = c.Guid(nullable: false),
                     })
                 .PrimaryKey(t => t.GameId)
                 .ForeignKey("dbo.Category", t => t.CategoryId, cascadeDelete: true)

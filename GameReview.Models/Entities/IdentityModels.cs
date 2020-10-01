@@ -34,7 +34,7 @@ namespace GameReviewer.WebMVC.Models
         }
 
         public DbSet<Game> Games { get; set; }
-        public DbSet<Category> Category { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<UserGameReview> UserGameReviews { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -32,6 +32,6 @@ namespace GameReview.Data
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
         public ICollection<UserGameReview> UserGameReviews { get; set; }
-        
+        public Guid OwnerId { get; set; }
     }
 }

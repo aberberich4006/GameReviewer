@@ -15,5 +15,6 @@ namespace GameReview.Models
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }

@@ -17,19 +17,19 @@ namespace GameReview.Services
             _userId = userId;
         }
 
-        public bool CreateGame(CategoryCreate model)
+        public bool CreateCategory(CategoryCreate model)
         {
             var entity =
                 new Category()
                 {
-
+                    OwnerId = _userId,
                     Name = model.Name,
 
                 };
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Category.Add(entity);
+                ctx.Categories.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -40,7 +40,8 @@ namespace GameReview.Services
             {
                 var query =
                     ctx
-                        .Games
+                        .Categories
+                        .Where(e => e.OwnerId == _userId)
                         .Select(
                             e =>
                                 new CategoryListItem
@@ -51,6 +52,56 @@ namespace GameReview.Services
                         );
 
                 return query.ToArray();
+            }
+        }
+
+        public CategoryDetail GetCategoryById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Categories
+                        .Single(e => e.CategoryId == id && e.OwnerId == _userId);
+                return
+                    new CategoryDetail
+                    {
+                        CategoryId = entity.CategoryId,
+                        Name = entity.Name,
+                        //CreatedUtc = entity.CreatedUtc
+                    };
+            }
+        }
+
+        public bool UpdateCategory(CategoryEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Categories
+                        .Single(e => e.CategoryId == model.CategoryId && e.OwnerId == _userId);
+
+                entity.CategoryId = model.CategoryId;
+                entity.Name = model.Name;
+
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteCategory(int categoryId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Categories
+                        .Single(e => e.CategoryId == categoryId && e.OwnerId == _userId);
+
+                ctx.Categories.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
             }
         }
     }

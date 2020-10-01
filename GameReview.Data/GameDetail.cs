@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameReview.Data
 {
-    public class GameEdit
+    public class GameDetail
     {
         public int GameId { get; set; }
         public string Name { get; set; }
@@ -15,9 +15,11 @@ namespace GameReview.Data
         [Display(Name="Category Id")]
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
+        public string CategoryName { get; set; }
         public string Developer { get; set; }
-
-        [Display(Name="Release Year")]
         public int ReleaseYear { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
+
+
     }
 }
