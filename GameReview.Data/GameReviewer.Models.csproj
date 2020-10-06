@@ -51,6 +51,10 @@
     <Compile Include="GameEdit.cs" />
     <Compile Include="GameListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserReviewCreate.cs" />
+    <Compile Include="UserReviewDetail.cs" />
+    <Compile Include="UserReviewEdit.cs" />
+    <Compile Include="UserReviewListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameReview.Models\GameReviewer.Data.csproj">

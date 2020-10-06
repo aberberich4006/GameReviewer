@@ -1,0 +1,39 @@
+﻿@model IEnumerable<GameReview.Data.UserReviewListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of Game Reviews</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserGameReviewId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Game)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserGameReviewId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Game)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.UserGameReviewId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.UserGameReviewId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.UserGameReviewId })
+        </td>
+    </tr>
+}
+
+</table>

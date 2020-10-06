@@ -172,6 +172,7 @@
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UserGameReviewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,6 +248,11 @@
     <Content Include="Views\Game\Delete.cshtml" />
     <Content Include="Views\Category\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
+    <Content Include="Views\UserGameReview\Index.cshtml" />
+    <Content Include="Views\UserGameReview\Create.cshtml" />
+    <Content Include="Views\UserGameReview\Details.cshtml" />
+    <Content Include="Views\UserGameReview\Edit.cshtml" />
+    <Content Include="Views\UserGameReview\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

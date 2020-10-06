@@ -61,6 +61,10 @@
     <Compile Include="Migrations\202010011507140_initialmigration.Designer.cs">
       <DependentUpon>202010011507140_initialmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010051543450_UserGameReview.cs" />
+    <Compile Include="Migrations\202010051543450_UserGameReview.Designer.cs">
+      <DependentUpon>202010051543450_UserGameReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\UserGameReview.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010011507140_initialmigration.resx">
       <DependentUpon>202010011507140_initialmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010051543450_UserGameReview.resx">
+      <DependentUpon>202010051543450_UserGameReview.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

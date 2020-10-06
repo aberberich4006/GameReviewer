@@ -17,17 +17,15 @@ namespace GameReview.Data
         [Required]
         [ForeignKey(nameof(Game))]
         public int GameId { get; set; }
-        public virtual Game Game { get; set; }
-
-        [Required]
-        [ForeignKey(nameof(ApplicationUser))]
-        public string UserId { get; set; }
-        
+        public virtual Game Game { get; set; }    
         public virtual ApplicationUser ApplicationUser { get; set; }
 
         [Required]
         [Range(1,10, ErrorMessage ="Please choose a number between 1 and 10.")]
         [Display(Name ="Review Score")]
         public decimal UserReview { get; set; }
+        public string Review { get; set; }
+        public Guid OwnerId { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }
