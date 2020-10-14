@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\GameReview.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\GameReview.Data.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\GameReview.Models.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\EntityFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\GameReview.Models.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\GameReview.Models.dll.config
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\bin\Release\EntityFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Release\GameReviewer.Models.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Release\GameReviewer.Models.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Release\GameReviewer.Models.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Release\GameReview.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\GameReviewer.WebMVC\GameReview.Data\obj\Release\GameReview.Data.pdb

@@ -75,6 +75,7 @@ namespace GameReview.Services
                         Name = entity.Name,
                         CategoryId = entity.CategoryId,
                         CategoryName = entity.Category.Name,
+                        ReleaseYear = entity.ReleaseYear,
                         Developer = entity.Developer,
                         CreatedUtc = entity.CreatedUtc
                     };

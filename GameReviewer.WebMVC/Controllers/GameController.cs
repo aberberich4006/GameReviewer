@@ -24,6 +24,11 @@ namespace GameReviewer.WebMVC.Controllers
 
         public ActionResult Create()
         {
+            var service = CreateCategoryService();
+            var category = service.GetCategories();
+            var banana = new SelectList(category, "categoryId", "Name");
+
+            ViewBag.Category = banana;
             return View();
         }
 
@@ -54,6 +59,11 @@ namespace GameReviewer.WebMVC.Controllers
 
         public ActionResult Edit(int id)
         {
+            var catService = CreateCategoryService();
+            var category = catService.GetCategories();
+            var banana = new SelectList(category, "categoryId", "Name");
+
+            ViewBag.Category = banana;
             var service = CreateGameService();
             var detail = service.GetGameById(id);
             var model =
@@ -120,6 +130,13 @@ namespace GameReviewer.WebMVC.Controllers
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new GameService(userId);
+            return service;
+        }
+
+        private CategoryService CreateCategoryService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CategoryService(userId);
             return service;
         }
     }
