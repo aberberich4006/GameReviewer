@@ -10,12 +10,12 @@
     <hr />
     <dl class="dl-horizontal" style="font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-size: large;">
         @*<dt>
-                @Html.DisplayNameFor(model => model.CategoryId)
-            </dt>
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CategoryId)
-        </dd>*@
+            <dd>
+                @Html.DisplayFor(model => model.CategoryId)
+            </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -27,6 +27,7 @@
 
     </dl>
 </div>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryId }) |
     @Html.ActionLink("Back to List", "Index", "", new { @style = "color: black;" })
